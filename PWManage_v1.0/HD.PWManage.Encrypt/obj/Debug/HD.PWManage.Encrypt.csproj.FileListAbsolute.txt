@@ -1,0 +1,5 @@
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.Encrypt\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.Encrypt\bin\Debug\HD.PWManage.Encrypt.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.Encrypt\bin\Debug\HD.PWManage.Encrypt.pdb
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.Encrypt\obj\Debug\HD.PWManage.Encrypt.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.Encrypt\obj\Debug\HD.PWManage.Encrypt.pdb

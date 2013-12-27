@@ -1,0 +1,9 @@
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.OledbDAL.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.OledbDAL.pdb
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.IDAL.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.Model.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.IDAL.pdb
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.Model.pdb
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\obj\Debug\HD.PWManage.OledbDAL.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.OledbDAL\obj\Debug\HD.PWManage.OledbDAL.pdb

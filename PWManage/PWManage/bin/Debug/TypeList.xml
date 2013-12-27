@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Types>
+    <type>
+      <name>伪随机数加密</name>
+      <class>PRanDataEncrypt</class>
+    </type>
+ </Types>

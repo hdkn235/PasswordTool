@@ -1,0 +1,16 @@
+E:\Projects\密码管理器\PWManage\PWManage\bin\Debug\PWManage.exe
+E:\Projects\密码管理器\PWManage\PWManage\bin\Debug\PWManage.pdb
+E:\Projects\密码管理器\PWManage\PWManage\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\密码管理器\PWManage\PWManage\obj\x86\Debug\PWManage.FrmManage.resources
+E:\Projects\密码管理器\PWManage\PWManage\obj\x86\Debug\PWManage.Properties.Resources.resources
+E:\Projects\密码管理器\PWManage\PWManage\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Projects\密码管理器\PWManage\PWManage\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Projects\密码管理器\PWManage\PWManage\obj\x86\Debug\PWManage.exe
+E:\Projects\密码管理器\PWManage\PWManage\obj\x86\Debug\PWManage.pdb
+E:\Projects\密码管理器\PWManage\PWManage\bin\Debug\DataEncrypt.dll
+E:\Projects\密码管理器\PWManage\PWManage\bin\Debug\DataEncrypt.pdb
+E:\Projects\密码管理器\PWManage\PWManage\bin\Debug\BLL.dll
+E:\Projects\密码管理器\PWManage\PWManage\bin\Debug\DAL.dll
+E:\Projects\密码管理器\PWManage\PWManage\bin\Debug\BLL.pdb
+E:\Projects\密码管理器\PWManage\PWManage\bin\Debug\DAL.pdb
+E:\Projects\密码管理器\PWManage\PWManage\obj\x86\Debug\PWManage.FrmLogin.resources

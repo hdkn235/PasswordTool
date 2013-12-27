@@ -1,0 +1,7 @@
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.IDAL\bin\Debug\HD.PWManage.IDAL.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.IDAL\bin\Debug\HD.PWManage.IDAL.pdb
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.IDAL\bin\Debug\HD.PWManage.Model.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.IDAL\bin\Debug\HD.PWManage.Model.pdb
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.IDAL\obj\Debug\HD.PWManage.IDAL.dll
+E:\Projects\密码管理器\PWManage_v1.0\HD.PWManage.IDAL\obj\Debug\HD.PWManage.IDAL.pdb

@@ -1,0 +1,9 @@
+E:\Projects\密码管理器\PWManage\DAL\bin\Debug\DAL.dll
+E:\Projects\密码管理器\PWManage\DAL\bin\Debug\DAL.pdb
+E:\Projects\密码管理器\PWManage\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\密码管理器\PWManage\DAL\obj\Debug\DAL.dll
+E:\Projects\密码管理器\PWManage\DAL\obj\Debug\DAL.pdb
+E:\Projects\密码管理器\PWManage\DAL\bin\Debug\BLL.dll
+E:\Projects\密码管理器\PWManage\DAL\bin\Debug\BLL.pdb
+E:\Projects\密码管理器\PWManage\DAL\bin\Debug\DataEncrypt.dll
+E:\Projects\密码管理器\PWManage\DAL\bin\Debug\DataEncrypt.pdb
