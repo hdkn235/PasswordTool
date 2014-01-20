@@ -48,3 +48,4 @@ E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.
 E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.Properties.Resources.resources
 E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.UI\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.UI\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.UI\bin\Debug\Interop.SpeechLib.dll
