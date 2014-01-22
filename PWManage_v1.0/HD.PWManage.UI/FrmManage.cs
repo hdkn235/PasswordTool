@@ -16,7 +16,6 @@ namespace HD.PWManage.UI
         public FrmManage()
         {
             InitializeComponent();
-            //this.skinEngine1.SkinFile = "Calmness.ssk";
         }
 
         /// <summary>
@@ -35,10 +34,6 @@ namespace HD.PWManage.UI
         private void Search()
         {
             dgvInfos.AutoGenerateColumns = false;
-            //while (dgvInfos.Rows.Count != 0)
-            //{
-            //    dgvInfos.Rows.RemoveAt(0);
-            //}
             UsersBLL bll = new UsersBLL();
             List<Users> list = bll.GetList();
             if (list != null)
@@ -117,7 +112,7 @@ namespace HD.PWManage.UI
             if (e.RowIndex < 0) return;
             txtKey.Text = dgvInfos.Rows[e.RowIndex].Cells["key"].Value.ToString();
             txtName.Text = dgvInfos.Rows[e.RowIndex].Cells["name"].Value.ToString();
-            txtPw.Text = ubll.GetPw(dgvInfos.Rows[e.RowIndex].Cells["pw"].Value.ToString());
+            txtPw.Text = dgvInfos.Rows[e.RowIndex].Cells["pw"].Value.ToString();
             txtID.Text = dgvInfos.Rows[e.RowIndex].Cells["id"].Value.ToString();
         }
 

@@ -30,12 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvInfos = new System.Windows.Forms.DataGridView();
-            this.cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.key = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pw = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -62,6 +56,12 @@
             this.txtNewPw = new System.Windows.Forms.TextBox();
             this.txtOldPw = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.key = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pw = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -99,50 +99,6 @@
             this.dgvInfos.Size = new System.Drawing.Size(740, 412);
             this.dgvInfos.TabIndex = 0;
             this.dgvInfos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfos_CellDoubleClick);
-            // 
-            // cb
-            // 
-            this.cb.FalseValue = "0";
-            this.cb.HeaderText = "";
-            this.cb.Name = "cb";
-            this.cb.TrueValue = "1";
-            this.cb.Width = 30;
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.Visible = false;
-            // 
-            // key
-            // 
-            this.key.DataPropertyName = "key";
-            this.key.HeaderText = "关键字";
-            this.key.Name = "key";
-            this.key.Width = 230;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "UName";
-            this.name.HeaderText = "登录名";
-            this.name.Name = "name";
-            this.name.Width = 230;
-            // 
-            // pw
-            // 
-            this.pw.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.pw.DataPropertyName = "pw";
-            this.pw.HeaderText = "密码";
-            this.pw.Name = "pw";
-            // 
-            // type
-            // 
-            this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.type.DataPropertyName = "type";
-            this.type.HeaderText = "加密方法";
-            this.type.Name = "type";
-            this.type.Visible = false;
             // 
             // splitContainer1
             // 
@@ -402,6 +358,53 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // cb
+            // 
+            this.cb.FalseValue = "0";
+            this.cb.HeaderText = "";
+            this.cb.Name = "cb";
+            this.cb.TrueValue = "1";
+            this.cb.Width = 30;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.Visible = false;
+            // 
+            // key
+            // 
+            this.key.DataPropertyName = "key";
+            this.key.HeaderText = "关键字";
+            this.key.Name = "key";
+            this.key.ReadOnly = true;
+            this.key.Width = 230;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "UName";
+            this.name.HeaderText = "登录名";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 230;
+            // 
+            // pw
+            // 
+            this.pw.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.pw.DataPropertyName = "pw";
+            this.pw.HeaderText = "密码";
+            this.pw.Name = "pw";
+            this.pw.ReadOnly = true;
+            // 
+            // type
+            // 
+            this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.type.DataPropertyName = "type";
+            this.type.HeaderText = "加密方法";
+            this.type.Name = "type";
+            this.type.Visible = false;
             // 
             // FrmManage
             // 

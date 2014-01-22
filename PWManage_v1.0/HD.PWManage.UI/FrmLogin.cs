@@ -12,13 +12,16 @@ namespace HD.PWManage.UI
 {
     public partial class FrmLogin : Form
     {
-        private SoundHelper sh = SoundHelper.instance();
+        //语音对象
+        private SoundHelper sh;
 
         public FrmLogin()
         {
             InitializeComponent();
-            sh.BeginRec();
-            sh.SetMessage = SetPW;
+            //语音识别功能
+            //sh = SoundHelper.instance();
+            //sh.BeginRec();
+            //sh.SetMessage = SetPW;
         }
 
         private void SetPW(string pw)
@@ -31,7 +34,7 @@ namespace HD.PWManage.UI
         {
             if (CommonHelper.CheckPw(txtPw.Text))
             {
-                sh.CloseRec();
+                //sh.CloseRec();
                 this.Hide();
                 FrmManage fm = new FrmManage();
                 fm.Show();

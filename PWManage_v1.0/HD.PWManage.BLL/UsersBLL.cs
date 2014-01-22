@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using HD.PWManage.DALFactory;
 using HD.PWManage.IDAL;
+using HD.PWManage.Model;
 
 namespace HD.PWManage.BLL
 {
@@ -17,7 +18,12 @@ namespace HD.PWManage.BLL
         /// <returns></returns>
         public List<Model.Users> GetList()
         {
-            return dal.GetList();
+            List<Users> list = dal.GetList();
+            foreach (Users user in list)
+            {
+                user.Pw = GetPw(user.Pw);
+            }
+            return list;
         }
 
         /// <summary>
