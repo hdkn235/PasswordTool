@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HD.MyControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\HD.MyControls.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +56,12 @@
     <Compile Include="FrmLogin.designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +72,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmManage.resx">
       <DependentUpon>FrmManage.cs</DependentUpon>
@@ -74,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config">
       <SubType>Designer</SubType>
@@ -109,6 +123,38 @@
       <Project>{80447FA9-58E8-420C-8CD0-4ADCB4FFCDDA}</Project>
       <Name>HD.PWManage.OledbDAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\sy1_01.jpg" />
+    <Content Include="Image\sy1_02.jpg" />
+    <Content Include="Image\sy1_03-1.jpg" />
+    <Content Include="Image\sy1_03.jpg" />
+    <Content Include="Image\sy1_04-1.jpg" />
+    <Content Include="Image\sy1_04.jpg" />
+    <Content Include="Image\sy1_05-1.jpg" />
+    <Content Include="Image\sy1_05.jpg" />
+    <Content Include="Image\lock.ico" />
+    <Content Include="lib\HD.MyControls.dll" />
+    <None Include="Image\sy1_08-2.jpg" />
+    <None Include="Image\sy1_08-1.jpg" />
+    <None Include="Image\sy1_07-2.jpg" />
+    <None Include="Image\sy1_07-1.jpg" />
+    <Content Include="Image\sy2_01.jpg" />
+    <Content Include="Image\sy2_02.jpg" />
+    <Content Include="Image\sy2_03-1.jpg" />
+    <Content Include="Image\sy2_03.jpg" />
+    <Content Include="Image\sy2_04-1.jpg" />
+    <Content Include="Image\sy2_04.jpg" />
+    <Content Include="Image\sy2_05-1.jpg" />
+    <Content Include="Image\sy2_05.jpg" />
+    <Content Include="Image\sy3_01.jpg" />
+    <Content Include="Image\sy3_02.jpg" />
+    <Content Include="Image\sy3_03-1.jpg" />
+    <Content Include="Image\sy3_03.jpg" />
+    <Content Include="Image\sy3_04-1.jpg" />
+    <Content Include="Image\sy3_04.jpg" />
+    <Content Include="Image\sy3_05-1.jpg" />
+    <Content Include="Image\sy3_05.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

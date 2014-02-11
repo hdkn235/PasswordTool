@@ -25,3 +25,12 @@ D:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManag
 D:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\obj\Debug\ResolveAssemblyReference.cache
 D:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\obj\Debug\HD.PWManage.OledbDAL.dll
 D:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\obj\Debug\HD.PWManage.OledbDAL.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.OledbDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.OledbDAL.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.IDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.Model.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.IDAL.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\bin\Debug\HD.PWManage.Model.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\obj\Debug\HD.PWManage.OledbDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.OledbDAL\obj\Debug\HD.PWManage.OledbDAL.pdb

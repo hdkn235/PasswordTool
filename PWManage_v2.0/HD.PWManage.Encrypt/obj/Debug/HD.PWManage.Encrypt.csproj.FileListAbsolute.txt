@@ -8,3 +8,8 @@ E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.Encrypt\bin\Debug\HD.PWManage
 E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.Encrypt\obj\Debug\ResolveAssemblyReference.cache
 E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.Encrypt\obj\Debug\HD.PWManage.Encrypt.dll
 E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.Encrypt\obj\Debug\HD.PWManage.Encrypt.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Encrypt\bin\Debug\HD.PWManage.Encrypt.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Encrypt\bin\Debug\HD.PWManage.Encrypt.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Encrypt\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Encrypt\obj\Debug\HD.PWManage.Encrypt.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Encrypt\obj\Debug\HD.PWManage.Encrypt.pdb
