@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using SpeechLib;
+﻿using SpeechLib;
 
 namespace HD.PWManage.Common
 {
@@ -13,6 +9,7 @@ namespace HD.PWManage.Common
         private SpeechLib.SpSharedRecoContextClass ssrContex = null;
 
         public delegate void StringEvent(string str);
+
         public StringEvent SetMessage;
 
         private SoundHelper()

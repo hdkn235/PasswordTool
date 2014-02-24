@@ -41,11 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UsersDAL.cs" />
+    <Compile Include="AccountInfoDAL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HD.PWManage.Common\HD.PWManage.Common.csproj">
+      <Project>{1A31657C-ECE2-4A0E-B5A6-4CBA6C47B896}</Project>
+      <Name>HD.PWManage.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HD.PWManage.DBHelper\HD.PWManage.DBHelper.csproj">
+      <Project>{944E36ED-057F-4601-9951-88E20263E3E6}</Project>
+      <Name>HD.PWManage.DBHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HD.PWManage.IDAL\HD.PWManage.IDAL.csproj">
       <Project>{9CE5EEC2-20BB-4040-AB95-5C42F1761F71}</Project>
       <Name>HD.PWManage.IDAL</Name>

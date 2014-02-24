@@ -19,10 +19,10 @@ namespace HD.PWManage.DALFactory
         /// 创建IUsersDAL数据操作类的实例对象
         /// </summary>
         /// <returns></returns>
-        public static IUsersDAL CreateUsersDAL()
+        public static IAccountInfoDAL CreateAccountInfoDAL()
         {
-            string fullClassName = NameSpace + ".UsersDAL";
-            return CreateInstance(fullClassName) as IUsersDAL;
+            string fullClassName = NameSpace + ".AccountInfoDAL";
+            return CreateInstance(fullClassName) as IAccountInfoDAL;
         }
 
         /// <summary>

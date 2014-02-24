@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD.PWManage.BLL", "HD.PWMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD.PWManage.Encrypt", "HD.PWManage.Encrypt\HD.PWManage.Encrypt.csproj", "{B147BFD4-2A23-45F0-BDFF-66A5972F41AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD.PWManage.DBHelper", "HD.PWManage.DBHelper\HD.PWManage.DBHelper.csproj", "{944E36ED-057F-4601-9951-88E20263E3E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,16 @@ Global
 		{B147BFD4-2A23-45F0-BDFF-66A5972F41AC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B147BFD4-2A23-45F0-BDFF-66A5972F41AC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B147BFD4-2A23-45F0-BDFF-66A5972F41AC}.Release|x86.ActiveCfg = Release|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{944E36ED-057F-4601-9951-88E20263E3E6}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -50,11 +50,15 @@ E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Enc
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.IDAL.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Model.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.OledbDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.DBHelper.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\MySql.Data.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\System.Data.SQLite.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.DALFactory.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Encrypt.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.IDAL.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Model.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.OledbDAL.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.DBHelper.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\obj\Debug\ResolveAssemblyReference.cache
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\obj\Debug\HD.PWManage.BLL.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\obj\Debug\HD.PWManage.BLL.pdb

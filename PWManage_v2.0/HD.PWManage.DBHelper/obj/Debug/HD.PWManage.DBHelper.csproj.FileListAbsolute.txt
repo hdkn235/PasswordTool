@@ -1,0 +1,7 @@
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DBHelper\bin\Debug\HD.PWManage.DBHelper.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DBHelper\bin\Debug\HD.PWManage.DBHelper.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DBHelper\bin\Debug\MySql.Data.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DBHelper\bin\Debug\System.Data.SQLite.DLL
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DBHelper\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DBHelper\obj\Debug\HD.PWManage.DBHelper.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DBHelper\obj\Debug\HD.PWManage.DBHelper.pdb
