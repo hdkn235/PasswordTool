@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmManage));
             this.dgvInfos = new System.Windows.Forms.DataGridView();
             this.cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +46,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtSearch = new HD.MyControls.QQTextBox();
             this.qqButton1 = new HD.MyControls.QQButton();
+            this.cbAll = new System.Windows.Forms.CheckBox();
+            this.pagerControl1 = new HD.PWManage.UI.PagerControl();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -74,11 +75,13 @@
             this.dgvInfos.Location = new System.Drawing.Point(0, 72);
             this.dgvInfos.MultiSelect = false;
             this.dgvInfos.Name = "dgvInfos";
+            this.dgvInfos.ReadOnly = true;
             this.dgvInfos.RowHeadersVisible = false;
             this.dgvInfos.RowTemplate.Height = 23;
             this.dgvInfos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfos.Size = new System.Drawing.Size(740, 475);
+            this.dgvInfos.Size = new System.Drawing.Size(740, 440);
             this.dgvInfos.TabIndex = 0;
+            this.dgvInfos.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvInfos_DataBindingComplete);
             // 
             // cb
             // 
@@ -86,6 +89,7 @@
             this.cb.Frozen = true;
             this.cb.HeaderText = "";
             this.cb.Name = "cb";
+            this.cb.ReadOnly = true;
             this.cb.TrueValue = "1";
             this.cb.Width = 30;
             // 
@@ -94,6 +98,7 @@
             this.id.DataPropertyName = "id";
             this.id.HeaderText = "id";
             this.id.Name = "id";
+            this.id.ReadOnly = true;
             this.id.Visible = false;
             // 
             // title
@@ -115,11 +120,11 @@
             // 
             // pw
             // 
-            this.pw.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.pw.DataPropertyName = "UserPassWord";
             this.pw.HeaderText = "密码";
             this.pw.Name = "pw";
             this.pw.ReadOnly = true;
+            this.pw.Width = 150;
             // 
             // web
             // 
@@ -127,6 +132,7 @@
             this.web.HeaderText = "网址";
             this.web.Name = "web";
             this.web.ReadOnly = true;
+            this.web.Width = 150;
             // 
             // email
             // 
@@ -134,6 +140,7 @@
             this.email.HeaderText = "邮箱";
             this.email.Name = "email";
             this.email.ReadOnly = true;
+            this.email.Width = 150;
             // 
             // remark
             // 
@@ -141,6 +148,7 @@
             this.remark.HeaderText = "备注";
             this.remark.Name = "remark";
             this.remark.ReadOnly = true;
+            this.remark.Width = 150;
             // 
             // errorProvider1
             // 
@@ -160,7 +168,7 @@
             // 
             // btnNew
             // 
-            this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
+            this.btnNew.Image = global::HD.PWManage.UI.Properties.Resources.add;
             this.btnNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(52, 22);
@@ -169,15 +177,16 @@
             // 
             // btnModify
             // 
-            this.btnModify.Image = ((System.Drawing.Image)(resources.GetObject("btnModify.Image")));
+            this.btnModify.Image = global::HD.PWManage.UI.Properties.Resources.update;
             this.btnModify.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(52, 22);
             this.btnModify.Text = "修改";
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.Image = global::HD.PWManage.UI.Properties.Resources.del;
             this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(52, 22);
@@ -186,7 +195,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(92)))));
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -208,24 +217,51 @@
             // qqButton1
             // 
             this.qqButton1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.qqButton1.Location = new System.Drawing.Point(472, 10);
+            this.qqButton1.Location = new System.Drawing.Point(472, 13);
             this.qqButton1.Name = "qqButton1";
-            this.qqButton1.Size = new System.Drawing.Size(70, 30);
+            this.qqButton1.Size = new System.Drawing.Size(70, 23);
             this.qqButton1.TabIndex = 31;
             this.qqButton1.Text = "搜索";
             this.qqButton1.UseVisualStyleBackColor = true;
             this.qqButton1.Click += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // cbAll
+            // 
+            this.cbAll.AutoSize = true;
+            this.cbAll.Location = new System.Drawing.Point(9, 76);
+            this.cbAll.Name = "cbAll";
+            this.cbAll.Size = new System.Drawing.Size(15, 14);
+            this.cbAll.TabIndex = 32;
+            this.cbAll.UseVisualStyleBackColor = true;
+            this.cbAll.CheckedChanged += new System.EventHandler(this.cbAll_CheckedChanged);
+            // 
+            // pagerControl1
+            // 
+            this.pagerControl1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pagerControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pagerControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(78)))), ((int)(((byte)(151)))));
+            this.pagerControl1.JumpText = "Go";
+            this.pagerControl1.Location = new System.Drawing.Point(0, 512);
+            this.pagerControl1.Name = "pagerControl1";
+            this.pagerControl1.PageIndex = 1;
+            this.pagerControl1.PageSize = 15;
+            this.pagerControl1.RecordCount = 1000;
+            this.pagerControl1.Size = new System.Drawing.Size(740, 35);
+            this.pagerControl1.TabIndex = 33;
+            this.pagerControl1.OnPageChanged += new System.EventHandler(this.pagerControl_OnPageChanged);
             // 
             // FrmManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 547);
+            this.Controls.Add(this.cbAll);
             this.Controls.Add(this.dgvInfos);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.qqButton1);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pagerControl1);
             this.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmManage";
@@ -262,6 +298,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn web;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn remark;
+        private System.Windows.Forms.CheckBox cbAll;
+        private PagerControl pagerControl1;
     }
 }
 

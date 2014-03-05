@@ -34,7 +34,16 @@ namespace HD.PWManage.UI
         {
             if (!string.IsNullOrEmpty(id))
             {
-
+                AccountInfo model = ubll.GetModel(int.Parse(id));
+                if (model != null)
+                {
+                    txtTitle.Text = model.Title;
+                    txtUserName.Text = model.UserName;
+                    txtUserPassWord.Text = model.UserPassWord;
+                    txtWebUrl.Text = model.WebUrl;
+                    txtEmail.Text = model.Email;
+                    txtRemark.Text = model.Remark;
+                }
             }
         }
 
@@ -52,7 +61,7 @@ namespace HD.PWManage.UI
                 {
                     accountInfo.UserName = txtUserName.Text;
                     accountInfo.Title = txtTitle.Text;
-                    accountInfo.UserPassWord = ebll.GetEncryptStr(txtUserPassWord.Text);
+                    accountInfo.UserPassWord = txtUserPassWord.Text;
                     accountInfo.WebUrl = txtWebUrl.Text;
                     accountInfo.Email = txtEmail.Text;
                     accountInfo.Remark = txtRemark.Text;

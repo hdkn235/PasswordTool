@@ -60,6 +60,13 @@ namespace HD.PWManage.UI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap _6400 {
+            get {
+                object obj = ResourceManager.GetObject("_6400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Icon _lock {
             get {
                 object obj = ResourceManager.GetObject("_lock", resourceCulture);
@@ -67,9 +74,30 @@ namespace HD.PWManage.UI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap del {
+            get {
+                object obj = ResourceManager.GetObject("del", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap png_0060 {
             get {
                 object obj = ResourceManager.GetObject("png_0060", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap png_1515 {
+            get {
+                object obj = ResourceManager.GetObject("png_1515", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,34 +154,6 @@ namespace HD.PWManage.UI.Properties {
         internal static System.Drawing.Bitmap sy1_05_1 {
             get {
                 object obj = ResourceManager.GetObject("sy1_05_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap sy1_07_1 {
-            get {
-                object obj = ResourceManager.GetObject("sy1_07_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap sy1_07_2 {
-            get {
-                object obj = ResourceManager.GetObject("sy1_07_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap sy1_08_1 {
-            get {
-                object obj = ResourceManager.GetObject("sy1_08_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap sy1_08_2 {
-            get {
-                object obj = ResourceManager.GetObject("sy1_08_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +266,13 @@ namespace HD.PWManage.UI.Properties {
         internal static System.Drawing.Bitmap sy3_05_1 {
             get {
                 object obj = ResourceManager.GetObject("sy3_05_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap update {
+            get {
+                object obj = ResourceManager.GetObject("update", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

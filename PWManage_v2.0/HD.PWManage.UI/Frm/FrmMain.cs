@@ -15,9 +15,15 @@ namespace HD.PWManage.UI
         public FrmMain()
         {
             InitializeComponent();
+            ShowPwBox();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            ShowPwBox();
+        }
+
+        private void ShowPwBox()
         {
             FrmManage fm = FrmManage.GetInstance();
             fm.MdiParent = this;
@@ -31,6 +37,12 @@ namespace HD.PWManage.UI
             {
                 msMain.Items.RemoveAt(e.Item.MergeIndex);
             }
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            FrmCreatePw frmCreatePw = new FrmCreatePw();
+            frmCreatePw.ShowDialog();
         }
     }
 }

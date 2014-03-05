@@ -119,9 +119,10 @@ namespace HD.PWManage.BLL
         /// <summary>
         /// 分页获取数据列表
         /// </summary>
-        public DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex)
+        public List<AccountInfo> GetListByPage(int startIndex, int pageSize)
         {
-            return dal.GetListByPage(strWhere, orderby, startIndex, endIndex);
+            List<AccountInfo> list = GetModelList("");
+            return list.OrderByDescending(a => a.RegistTime).Skip((startIndex - 1) * pageSize).Take(pageSize).ToList<AccountInfo>();
         }
         /// <summary>
         /// 分页获取数据列表

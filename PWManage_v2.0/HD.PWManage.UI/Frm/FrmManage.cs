@@ -48,11 +48,13 @@ namespace HD.PWManage.UI
         /// </summary>
         private void Search()
         {
-            List<AccountInfo> list = bll.GetModelList("");
+             List<AccountInfo> list = bll.GetListByPage(pagerControl1.PageIndex, pagerControl1.PageSize);
             if (list != null)
             {
+                int count = bll.GetRecordCount("");
                 dgvInfos.DataSource = list;
-            }
+                pagerControl1.DrawControl(count);
+             }
         }
 
         /// <summary>
@@ -88,7 +90,7 @@ namespace HD.PWManage.UI
             {
                 for (int i = 0; i < dgvInfos.Rows.Count; i++)
                 {
-                    if (dgvInfos.Rows[i].Cells["cb"].Value != null && dgvInfos.Rows[i].Cells["cb"].Value.ToString() == "1")
+                    if (Convert.ToBoolean(dgvInfos.Rows[i].Cells["cb"].Value))//刚发现
                     {
                         bll.Delete(Convert.ToInt32(dgvInfos.Rows[i].Cells["id"].Value));
                     }
@@ -125,6 +127,50 @@ namespace HD.PWManage.UI
             }
         }
 
+        private void FrmManage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+            object id = dgvInfos.SelectedRows[0].Cells["id"].Value;
+            if (id != null)
+            {
+                FrmAccountInfo frmAccountInfo = new FrmAccountInfo(id.ToString(), AfterEditFunc);
+                frmAccountInfo.ShowDialog();
+            }
+        }
+
+        private void cbAll_CheckedChanged(object sender, EventArgs e)
+        {
+            dgvInfos.EndEdit();//取消编辑状态 选中行的编辑没有结束之前是不会更新到DataGridView上的
+            for (int i = 0; i < dgvInfos.Rows.Count; i++)
+            {
+                dgvInfos.Rows[i].Cells["cb"].Value = (sender as CheckBox).Checked;
+            }
+        }
+
+        private void pagerControl_OnPageChanged(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private void dgvInfos_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            if (this.dgvInfos.Rows.Count != 0)
+            {
+                for (int i = 0; i < this.dgvInfos.Rows.Count; )
+                {
+                    this.dgvInfos.Rows[i].DefaultCellStyle.BackColor = System.Drawing.Color.LightGray;
+                    i += 2;
+                }
+            }
+        }
+
+
+        #region 修改密码代码
+
         ///// <summary>
         ///// 修改密码确认按钮事件
         ///// </summary>
@@ -154,11 +200,6 @@ namespace HD.PWManage.UI
         //{
         //    ClearPwInfo();
         //}
-
-        private void FrmManage_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
 
         //private bool CheckPwInfo()
         //{
@@ -195,7 +236,8 @@ namespace HD.PWManage.UI
         //    }
 
         //    return true;
-        //}
+        //} 
+        #endregion
 
     }
 }

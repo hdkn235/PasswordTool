@@ -36,8 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HD.MyControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\HD.MyControls.dll</HintPath>
+      <HintPath>..\Lib\HD.MyControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,42 +50,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\FrmAccountInfo.cs">
+    <Compile Include="Control\PagerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PagerControl.designer.cs">
+      <DependentUpon>PagerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmAccountInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmAccountInfo.Designer.cs">
+    <Compile Include="Frm\FrmAccountInfo.Designer.cs">
       <DependentUpon>FrmAccountInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmLogin.cs">
+    <Compile Include="Frm\FrmCreatePw.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmLogin.designer.cs">
+    <Compile Include="Frm\FrmCreatePw.Designer.cs">
+      <DependentUpon>FrmCreatePw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmLogin.designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmMain.cs">
+    <Compile Include="Frm\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmMain.Designer.cs">
+    <Compile Include="Frm\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmManage.cs">
+    <Compile Include="Frm\FrmManage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmManage.designer.cs">
+    <Compile Include="Frm\FrmManage.designer.cs">
       <DependentUpon>FrmManage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form\FrmAccountInfo.resx">
+    <EmbeddedResource Include="Control\PagerControl.resx">
+      <DependentUpon>PagerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmAccountInfo.resx">
       <DependentUpon>FrmAccountInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmLogin.resx">
+    <EmbeddedResource Include="Frm\FrmCreatePw.resx">
+      <DependentUpon>FrmCreatePw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmMain.resx">
+    <EmbeddedResource Include="Frm\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmManage.resx">
+    <EmbeddedResource Include="Frm\FrmManage.resx">
       <DependentUpon>FrmManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -135,6 +152,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Image\6400.png" />
+    <Content Include="Image\add.png" />
+    <Content Include="Image\del.png" />
+    <None Include="Image\png-1590.png" />
+    <None Include="Image\png-1515.png" />
+    <Content Include="Image\update.png" />
     <Content Include="Image\png-0060.png" />
     <Content Include="Image\sy1_01.jpg" />
     <Content Include="Image\sy1_02.jpg" />
@@ -167,6 +190,7 @@
     <Content Include="Image\sy3_05-1.jpg" />
     <Content Include="Image\sy3_05.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

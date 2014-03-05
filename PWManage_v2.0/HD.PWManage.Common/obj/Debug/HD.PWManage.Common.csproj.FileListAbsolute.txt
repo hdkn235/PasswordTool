@@ -27,3 +27,4 @@ E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\Interop.Spee
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\HD.PWManage.Common.csproj.ResolveComReference.cache
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\HD.PWManage.Common.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\HD.PWManage.Common.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\bin\Debug\ChnCharInfo.dll

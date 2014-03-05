@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Security.Cryptography;  
 using System.Text;
-
 namespace HD.PWManage.Common
 {
 	/// <summary>
 	/// DES加密/解密类。
+    /// Copyright (C) Maticsoft
 	/// </summary>
 	public class DESEncrypt
 	{
@@ -22,7 +22,7 @@ namespace HD.PWManage.Common
         /// <returns></returns>
 		public static string Encrypt(string Text) 
 		{
-            return Encrypt(Text, "litianping");
+			return Encrypt(Text,"MATICSOFT");
 		}
 		/// <summary> 
 		/// 加密数据 
@@ -31,11 +31,13 @@ namespace HD.PWManage.Common
 		/// <param name="sKey"></param> 
 		/// <returns></returns> 
 		public static string Encrypt(string Text,string sKey) 
-		{ 
+		{
+            //访问数据加密标准(DES)算法的加密服务提供程序 (CSP) 版本的包装对象
 			DESCryptoServiceProvider des = new DESCryptoServiceProvider(); 
 			byte[] inputByteArray; 
-			inputByteArray=Encoding.Default.GetBytes(Text); 
-			des.Key = ASCIIEncoding.ASCII.GetBytes(System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(sKey, "md5").Substring(0, 8)); 
+			inputByteArray=Encoding.Default.GetBytes(Text);
+            //建立加密对象的密钥和偏移量,使用ASCIIEncoding.ASCII方法的GetBytes方法
+            des.Key = ASCIIEncoding.ASCII.GetBytes(System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(sKey, "md5").Substring(0, 8)); 
 			des.IV = ASCIIEncoding.ASCII.GetBytes(System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(sKey, "md5").Substring(0, 8)); 
 			System.IO.MemoryStream ms=new System.IO.MemoryStream(); 
 			CryptoStream cs=new CryptoStream(ms,des.CreateEncryptor(),CryptoStreamMode.Write); 
@@ -61,7 +63,7 @@ namespace HD.PWManage.Common
         /// <returns></returns>
 		public static string Decrypt(string Text) 
 		{
-            return Decrypt(Text, "litianping");
+			return Decrypt(Text,"MATICSOFT");
 		}
 		/// <summary> 
 		/// 解密数据 
