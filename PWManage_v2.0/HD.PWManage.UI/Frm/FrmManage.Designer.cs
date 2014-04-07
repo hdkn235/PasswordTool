@@ -82,6 +82,7 @@
             this.dgvInfos.Size = new System.Drawing.Size(740, 440);
             this.dgvInfos.TabIndex = 0;
             this.dgvInfos.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvInfos_DataBindingComplete);
+            this.dgvInfos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvInfos_MouseDoubleClick);
             // 
             // cb
             // 

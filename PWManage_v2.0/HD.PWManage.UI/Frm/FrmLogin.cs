@@ -20,10 +20,18 @@ namespace HD.PWManage.UI
         public FrmLogin()
         {
             InitializeComponent();
-            //语音识别功能
-            //sh = SoundHelper.instance();
-            //sh.BeginRec();
-            //sh.SetMessage = SetPW;
+
+            //OpenVoice();
+        }
+
+        /// <summary>
+        /// 语音识别功能
+        /// </summary>
+        private void OpenVoice()
+        {
+            sh = SoundHelper.instance();
+            sh.BeginRec();
+            sh.SetMessage = SetPW; 
         }
 
         private void SetPW(string pw)
@@ -240,5 +248,13 @@ namespace HD.PWManage.UI
             }
         }
         #endregion
+
+        private void txtPw_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnLogin_Click(null, null);
+            }
+        }
     }
 }

@@ -157,6 +157,7 @@
     <Content Include="Image\del.png" />
     <None Include="Image\png-1590.png" />
     <None Include="Image\png-1515.png" />
+    <Content Include="Image\png-0090.png" />
     <Content Include="Image\update.png" />
     <Content Include="Image\png-0060.png" />
     <Content Include="Image\sy1_01.jpg" />

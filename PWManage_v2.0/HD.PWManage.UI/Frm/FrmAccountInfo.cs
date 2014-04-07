@@ -30,6 +30,14 @@ namespace HD.PWManage.UI
             InitializeComponent();
         }
 
+        public FrmAccountInfo(string title,string pw, Action<bool> callBackFunc)
+        {
+            InitializeComponent();
+            this.callBackFunc = callBackFunc;
+            txtTitle.Text = title;
+            txtUserPassWord.Text = pw;
+        }
+
         private void FrmAccountInfo_Load(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(id))

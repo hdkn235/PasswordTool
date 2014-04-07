@@ -77,6 +77,7 @@
             this.txtMainPw.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtMainPw.Location = new System.Drawing.Point(80, 76);
             this.txtMainPw.Name = "txtMainPw";
+            this.txtMainPw.PasswordChar = '*';
             this.txtMainPw.Size = new System.Drawing.Size(186, 23);
             this.txtMainPw.TabIndex = 2;
             // 
@@ -97,6 +98,7 @@
             this.txtPw.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtPw.Location = new System.Drawing.Point(80, 123);
             this.txtPw.Name = "txtPw";
+            this.txtPw.ReadOnly = true;
             this.txtPw.Size = new System.Drawing.Size(271, 23);
             this.txtPw.TabIndex = 4;
             // 
@@ -109,9 +111,11 @@
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnCancel.Location = new System.Drawing.Point(228, 174);
             this.btnCancel.Name = "btnCancel";

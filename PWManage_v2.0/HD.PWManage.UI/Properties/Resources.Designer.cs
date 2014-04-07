@@ -95,6 +95,13 @@ namespace HD.PWManage.UI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap png_0090 {
+            get {
+                object obj = ResourceManager.GetObject("png_0090", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap png_1515 {
             get {
                 object obj = ResourceManager.GetObject("png_1515", resourceCulture);

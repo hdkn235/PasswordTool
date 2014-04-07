@@ -33,18 +33,18 @@
             this.txtPw = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel_Title = new System.Windows.Forms.Panel();
-            this.panel_ALL = new System.Windows.Forms.Panel();
-            this.btnCancel = new HD.MyControls.VistaButton();
-            this.btnLogin = new HD.MyControls.VistaButton();
             this.pictureBox_Close = new System.Windows.Forms.PictureBox();
             this.pictureBox_Min = new System.Windows.Forms.PictureBox();
             this.pictureBox_Max = new System.Windows.Forms.PictureBox();
+            this.panel_ALL = new System.Windows.Forms.Panel();
+            this.btnCancel = new HD.MyControls.VistaButton();
+            this.btnLogin = new HD.MyControls.VistaButton();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel_Title.SuspendLayout();
-            this.panel_ALL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Max)).BeginInit();
+            this.panel_ALL.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -62,9 +62,9 @@
             // 
             this.txtPw.Location = new System.Drawing.Point(101, 42);
             this.txtPw.Name = "txtPw";
-            this.txtPw.PasswordChar = '*';
             this.txtPw.Size = new System.Drawing.Size(172, 21);
             this.txtPw.TabIndex = 1;
+            this.txtPw.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPw_KeyPress);
             // 
             // errorProvider1
             // 
@@ -80,6 +80,45 @@
             this.panel_Title.Name = "panel_Title";
             this.panel_Title.Size = new System.Drawing.Size(298, 37);
             this.panel_Title.TabIndex = 4;
+            // 
+            // pictureBox_Close
+            // 
+            this.pictureBox_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox_Close.Location = new System.Drawing.Point(266, 9);
+            this.pictureBox_Close.Name = "pictureBox_Close";
+            this.pictureBox_Close.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_Close.TabIndex = 6;
+            this.pictureBox_Close.TabStop = false;
+            this.pictureBox_Close.Tag = "2";
+            this.pictureBox_Close.Click += new System.EventHandler(this.pictureBox_Close_Click);
+            this.pictureBox_Close.MouseEnter += new System.EventHandler(this.pictureBox_Close_MouseEnter);
+            this.pictureBox_Close.MouseLeave += new System.EventHandler(this.pictureBox_Close_MouseLeave);
+            // 
+            // pictureBox_Min
+            // 
+            this.pictureBox_Min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox_Min.Location = new System.Drawing.Point(214, 9);
+            this.pictureBox_Min.Name = "pictureBox_Min";
+            this.pictureBox_Min.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_Min.TabIndex = 5;
+            this.pictureBox_Min.TabStop = false;
+            this.pictureBox_Min.Tag = "0";
+            this.pictureBox_Min.Click += new System.EventHandler(this.pictureBox_Close_Click);
+            this.pictureBox_Min.MouseEnter += new System.EventHandler(this.pictureBox_Close_MouseEnter);
+            this.pictureBox_Min.MouseLeave += new System.EventHandler(this.pictureBox_Close_MouseLeave);
+            // 
+            // pictureBox_Max
+            // 
+            this.pictureBox_Max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox_Max.Location = new System.Drawing.Point(240, 9);
+            this.pictureBox_Max.Name = "pictureBox_Max";
+            this.pictureBox_Max.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_Max.TabIndex = 4;
+            this.pictureBox_Max.TabStop = false;
+            this.pictureBox_Max.Tag = "1";
+            this.pictureBox_Max.Click += new System.EventHandler(this.pictureBox_Close_Click);
+            this.pictureBox_Max.MouseEnter += new System.EventHandler(this.pictureBox_Close_MouseEnter);
+            this.pictureBox_Max.MouseLeave += new System.EventHandler(this.pictureBox_Close_MouseLeave);
             // 
             // panel_ALL
             // 
@@ -125,45 +164,6 @@
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // pictureBox_Close
-            // 
-            this.pictureBox_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox_Close.Location = new System.Drawing.Point(266, 9);
-            this.pictureBox_Close.Name = "pictureBox_Close";
-            this.pictureBox_Close.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox_Close.TabIndex = 6;
-            this.pictureBox_Close.TabStop = false;
-            this.pictureBox_Close.Tag = "2";
-            this.pictureBox_Close.Click += new System.EventHandler(this.pictureBox_Close_Click);
-            this.pictureBox_Close.MouseEnter += new System.EventHandler(this.pictureBox_Close_MouseEnter);
-            this.pictureBox_Close.MouseLeave += new System.EventHandler(this.pictureBox_Close_MouseLeave);
-            // 
-            // pictureBox_Min
-            // 
-            this.pictureBox_Min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox_Min.Location = new System.Drawing.Point(214, 9);
-            this.pictureBox_Min.Name = "pictureBox_Min";
-            this.pictureBox_Min.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox_Min.TabIndex = 5;
-            this.pictureBox_Min.TabStop = false;
-            this.pictureBox_Min.Tag = "0";
-            this.pictureBox_Min.Click += new System.EventHandler(this.pictureBox_Close_Click);
-            this.pictureBox_Min.MouseEnter += new System.EventHandler(this.pictureBox_Close_MouseEnter);
-            this.pictureBox_Min.MouseLeave += new System.EventHandler(this.pictureBox_Close_MouseLeave);
-            // 
-            // pictureBox_Max
-            // 
-            this.pictureBox_Max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox_Max.Location = new System.Drawing.Point(240, 9);
-            this.pictureBox_Max.Name = "pictureBox_Max";
-            this.pictureBox_Max.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox_Max.TabIndex = 4;
-            this.pictureBox_Max.TabStop = false;
-            this.pictureBox_Max.Tag = "1";
-            this.pictureBox_Max.Click += new System.EventHandler(this.pictureBox_Close_Click);
-            this.pictureBox_Max.MouseEnter += new System.EventHandler(this.pictureBox_Close_MouseEnter);
-            this.pictureBox_Max.MouseLeave += new System.EventHandler(this.pictureBox_Close_MouseLeave);
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -179,11 +179,11 @@
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.panel_Title.ResumeLayout(false);
-            this.panel_ALL.ResumeLayout(false);
-            this.panel_ALL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Min)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Max)).EndInit();
+            this.panel_ALL.ResumeLayout(false);
+            this.panel_ALL.PerformLayout();
             this.ResumeLayout(false);
 
         }

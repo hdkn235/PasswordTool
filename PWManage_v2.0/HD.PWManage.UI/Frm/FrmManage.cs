@@ -14,6 +14,7 @@ namespace HD.PWManage.UI
     public partial class FrmManage : Form
     {
         private static FrmManage instance;
+        private static readonly object syncRoot = new object();
         private AccountInfoBLL bll = new AccountInfoBLL();
 
         private FrmManage()
@@ -25,7 +26,13 @@ namespace HD.PWManage.UI
         {
             if (instance == null || instance.IsDisposed)
             {
-                instance = new FrmManage();
+                lock (syncRoot)
+                {
+                    if (instance == null || instance.IsDisposed)
+                    {
+                        instance = new FrmManage();
+                    }
+                }
             }
             return instance;
         }
@@ -48,13 +55,13 @@ namespace HD.PWManage.UI
         /// </summary>
         private void Search()
         {
-             List<AccountInfo> list = bll.GetListByPage(pagerControl1.PageIndex, pagerControl1.PageSize);
+            List<AccountInfo> list = bll.GetListByPage(pagerControl1.PageIndex, pagerControl1.PageSize);
             if (list != null)
             {
                 int count = bll.GetRecordCount("");
                 dgvInfos.DataSource = list;
                 pagerControl1.DrawControl(count);
-             }
+            }
         }
 
         /// <summary>
@@ -74,6 +81,12 @@ namespace HD.PWManage.UI
             {
                 Search();
             }
+        }
+
+        public void SaveAccountInfo(string title, string pw)
+        {
+            FrmAccountInfo frmAccountInfo = new FrmAccountInfo(title, pw, AfterEditFunc);
+            frmAccountInfo.ShowDialog();
         }
 
         /// <summary>
@@ -112,7 +125,7 @@ namespace HD.PWManage.UI
         {
             for (int i = 0; i < dgvInfos.Rows.Count; i++)
             {
-                if (!dgvInfos.Rows[i].Cells["key"].Value.ToString().Contains(txtSearch.Text))
+                if (!dgvInfos.Rows[i].Cells["title"].Value.ToString().Contains(txtSearch.Text))
                 {
                     dgvInfos.BindingContext[dgvInfos.DataSource].SuspendBinding();//把邦定数据挂起，然后可以对空间中的数据进行操作
                     dgvInfos.Rows[i].Visible = false;
@@ -165,6 +178,16 @@ namespace HD.PWManage.UI
                     this.dgvInfos.Rows[i].DefaultCellStyle.BackColor = System.Drawing.Color.LightGray;
                     i += 2;
                 }
+            }
+        }
+
+        private void dgvInfos_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            object id = dgvInfos.SelectedRows[0].Cells["id"].Value;
+            if (id != null)
+            {
+                FrmAccountInfo frmAccountInfo = new FrmAccountInfo(id.ToString(), AfterEditFunc);
+                frmAccountInfo.ShowDialog();
             }
         }
 
