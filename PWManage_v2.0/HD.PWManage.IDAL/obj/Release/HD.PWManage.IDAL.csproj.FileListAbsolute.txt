@@ -1,0 +1,7 @@
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.IDAL\bin\Release\HD.PWManage.IDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.IDAL\bin\Release\HD.PWManage.IDAL.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.IDAL\bin\Release\HD.PWManage.Model.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.IDAL\bin\Release\HD.PWManage.Model.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.IDAL\obj\Release\HD.PWManage.IDAL.csprojResolveAssemblyReference.cache
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.IDAL\obj\Release\HD.PWManage.IDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.IDAL\obj\Release\HD.PWManage.IDAL.pdb

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using HD.MyControls;
+using HD.PWManage.UI.Frm;
 
 namespace HD.PWManage.UI
 {
@@ -27,7 +28,7 @@ namespace HD.PWManage.UI
         {
             FrmManage fm = FrmManage.GetInstance();
             fm.MdiParent = this;
-            fm.WindowState = FormWindowState.Maximized;
+            fm.Dock = DockStyle.Fill;
             fm.Show();
         }
 
@@ -43,6 +44,12 @@ namespace HD.PWManage.UI
         {
             FrmCreatePw frmCreatePw = new FrmCreatePw();
             frmCreatePw.ShowDialog();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            FrmModifyPW frmSettings = new FrmModifyPW();
+            frmSettings.ShowDialog();
         }
     }
 }

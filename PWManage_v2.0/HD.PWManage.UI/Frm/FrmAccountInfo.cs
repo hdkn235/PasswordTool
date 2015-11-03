@@ -16,7 +16,6 @@ namespace HD.PWManage.UI
         private string id = "";
         private Action<bool> callBackFunc;
         private AccountInfoBLL ubll = new AccountInfoBLL();
-        private EncryptBLL ebll = new EncryptBLL();
 
         public FrmAccountInfo()
         {
@@ -73,8 +72,8 @@ namespace HD.PWManage.UI
                     accountInfo.WebUrl = txtWebUrl.Text;
                     accountInfo.Email = txtEmail.Text;
                     accountInfo.Remark = txtRemark.Text;
-                    accountInfo.EncryptType = ebll.GetName();
                     accountInfo.RegistTime = DateTime.Now;
+                    accountInfo.EncryptType = string.Empty;
 
                     bool result = false;
                     if (string.IsNullOrEmpty(id))
@@ -116,19 +115,19 @@ namespace HD.PWManage.UI
         /// <returns></returns>
         private bool CheckData()
         {
-            if (txtUserPassWord.Text == "")
-            {
-                MessageBox.Show("请输入密码！");
-                return false;
-            }
             if (txtTitle.Text == "")
             {
-                MessageBox.Show("请输入标题！");
+                MessageBox.Show("请输入关键词！");
                 return false;
             }
             if (txtUserName.Text == "")
             {
-                MessageBox.Show("请输入用户名！");
+                MessageBox.Show("请输入账号！");
+                return false;
+            }
+            if (txtUserPassWord.Text == "")
+            {
+                MessageBox.Show("请输入密！");
                 return false;
             }
             return true;

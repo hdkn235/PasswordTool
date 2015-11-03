@@ -48,11 +48,13 @@
     <Compile Include="DEncrypt\DEncrypt.cs" />
     <Compile Include="DEncrypt\DESEncrypt.cs" />
     <Compile Include="DEncrypt\HashEncode.cs" />
+    <Compile Include="DEncrypt\MD5Encrypt.cs" />
     <Compile Include="DEncrypt\RSACryption.cs" />
     <Compile Include="PinYinHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterHelper.cs" />
     <Compile Include="SoundHelper.cs" />
+    <Compile Include="Validator.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="SpeechLib">

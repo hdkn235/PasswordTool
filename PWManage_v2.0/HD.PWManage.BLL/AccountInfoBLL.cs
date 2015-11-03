@@ -136,12 +136,6 @@ namespace HD.PWManage.BLL
 
         #region  ExtensionMethod
 
-        public string GetPw(string pw)
-        {
-            EncryptBLL ebll = new EncryptBLL();
-            return ebll.GetDecryptStr(pw);
-        }
-
         #endregion  ExtensionMethod
 
     }

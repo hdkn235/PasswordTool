@@ -55,6 +55,7 @@ namespace HD.PWManage.UI
         /// </summary>
         private void Search()
         {
+            cbAll.Checked = false;
             List<AccountInfo> list = bll.GetListByPage(pagerControl1.PageIndex, pagerControl1.PageSize);
             if (list != null)
             {
@@ -96,23 +97,28 @@ namespace HD.PWManage.UI
         /// <param name="e"></param>
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(this, "您确定要删除选择的密码信息吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No) return;
-            AccountInfoBLL bll = new AccountInfoBLL();
-            AccountInfo accountInfo = new AccountInfo();
-            try
+            List<string> delList = new List<string>();
+            for (int i = 0; i < dgvInfos.Rows.Count; i++)
             {
-                for (int i = 0; i < dgvInfos.Rows.Count; i++)
+                if (Convert.ToBoolean(dgvInfos.Rows[i].Cells["cb"].Value))//刚发现
                 {
-                    if (Convert.ToBoolean(dgvInfos.Rows[i].Cells["cb"].Value))//刚发现
-                    {
-                        bll.Delete(Convert.ToInt32(dgvInfos.Rows[i].Cells["id"].Value));
-                    }
+                    delList.Add(dgvInfos.Rows[i].Cells["id"].Value.ToString());
                 }
             }
-            catch (Exception ex)
+
+            if (delList.Count > 0)
             {
-                MessageBox.Show(ex.Message);
+                if (MessageBox.Show(this, "您确定要删除选择的账号信息吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No) return;
+                AccountInfoBLL bll = new AccountInfoBLL();
+                AccountInfo accountInfo = new AccountInfo();
+                bll.DeleteList(string.Join(",", delList.ToArray()));
             }
+            else
+            {
+                MessageBox.Show("请您选择要删除的账号信息！","提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             Search();
         }
 

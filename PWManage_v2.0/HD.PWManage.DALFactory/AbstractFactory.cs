@@ -26,6 +26,16 @@ namespace HD.PWManage.DALFactory
         }
 
         /// <summary>
+        /// 创建IUsersDAL数据操作类的实例对象
+        /// </summary>
+        /// <returns></returns>
+        public static IConfigDAL CreateConfigDAL()
+        {
+            string fullClassName = NameSpace + ".ConfigDAL";
+            return CreateInstance(fullClassName) as IConfigDAL;
+        }
+
+        /// <summary>
         /// 从程序集中创建出具体的数据操作类的实例
         /// </summary>
         /// <param name="fullClassName">类的完整名称</param>

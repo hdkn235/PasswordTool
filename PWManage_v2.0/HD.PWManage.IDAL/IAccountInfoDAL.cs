@@ -9,6 +9,8 @@ namespace HD.PWManage.IDAL
 {
     public interface IAccountInfoDAL:IBaseDAL<AccountInfo>
     {
+        int GetRecordCount(string strWhere);
 
+        DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex);
     }
 }

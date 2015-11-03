@@ -24,8 +24,5 @@ namespace HD.PWManage.IDAL
 
         T DataRowToModel(DataRow row);
 
-        int GetRecordCount(string strWhere);
-
-        DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex);
     }
 }

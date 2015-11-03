@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using HD.PWManage.BLL;
 using HD.PWManage.Common;
+using HD.PWManage.Model;
 
 namespace HD.PWManage.UI
 {
@@ -31,7 +32,7 @@ namespace HD.PWManage.UI
         {
             sh = SoundHelper.instance();
             sh.BeginRec();
-            sh.SetMessage = SetPW; 
+            sh.SetMessage = SetPW;
         }
 
         private void SetPW(string pw)
@@ -42,7 +43,7 @@ namespace HD.PWManage.UI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (CommonHelper.CheckPw(txtPw.Text))
+            if (CheckPw(txtPw.Text))
             {
                 //sh.CloseRec();
                 this.Hide();
@@ -56,9 +57,20 @@ namespace HD.PWManage.UI
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 检查登录密码是否正确
+        /// </summary>
+        /// <returns></returns>
+        private bool CheckPw(string pw)
         {
-            Application.Exit();
+            string loginPw = CommonHelper.GetMD5Str(pw);
+            ConfigBLL bll = new ConfigBLL();
+            Config model = bll.GetLoginPWModel();
+            if (model.CInfo.Equals(loginPw))
+            {
+                return true;
+            }
+            return false;
         }
 
         private void pictureBox_Close_Click(object sender, EventArgs e)
@@ -106,8 +118,6 @@ namespace HD.PWManage.UI
                         panel_ALL.BackgroundImage = Properties.Resources.sy1_02;
                         pictureBox_Min.Image = null;
                         pictureBox_Min.Image = Properties.Resources.sy1_04;
-                        pictureBox_Max.Image = null;
-                        pictureBox_Max.Image = Properties.Resources.sy1_05;
                         pictureBox_Close.Image = null;
                         pictureBox_Close.Image = Properties.Resources.sy1_03;
                         var_bar = 1;
@@ -121,8 +131,6 @@ namespace HD.PWManage.UI
                         panel_ALL.BackgroundImage = Properties.Resources.sy2_02;
                         pictureBox_Min.Image = null;
                         pictureBox_Min.Image = Properties.Resources.sy2_04;
-                        pictureBox_Max.Image = null;
-                        pictureBox_Max.Image = Properties.Resources.sy2_05;
                         pictureBox_Close.Image = null;
                         pictureBox_Close.Image = Properties.Resources.sy2_03;
                         var_bar = 2;
@@ -136,8 +144,6 @@ namespace HD.PWManage.UI
                         panel_ALL.BackgroundImage = Properties.Resources.sy3_02;
                         pictureBox_Min.Image = null;
                         pictureBox_Min.Image = Properties.Resources.sy3_04;
-                        pictureBox_Max.Image = null;
-                        pictureBox_Max.Image = Properties.Resources.sy3_05;
                         pictureBox_Close.Image = null;
                         pictureBox_Close.Image = Properties.Resources.sy3_03;
                         var_bar = 3;

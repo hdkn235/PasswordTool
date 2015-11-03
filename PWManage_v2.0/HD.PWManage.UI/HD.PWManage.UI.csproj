@@ -9,11 +9,26 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HD.PWManage.UI</RootNamespace>
-    <AssemblyName>HD.PWManage.UI</AssemblyName>
+    <AssemblyName>密码箱V2</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -34,12 +49,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>lock.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="HD.MyControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Lib\HD.MyControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -86,6 +107,12 @@
     <Compile Include="Frm\FrmManage.designer.cs">
       <DependentUpon>FrmManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm\FrmModifyPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmModifyPW.Designer.cs">
+      <DependentUpon>FrmModifyPW.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Control\PagerControl.resx">
@@ -105,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm\FrmManage.resx">
       <DependentUpon>FrmManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmModifyPW.resx">
+      <DependentUpon>FrmModifyPW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +158,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="AccountInfo.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HD.PWManage.BLL\HD.PWManage.BLL.csproj">
@@ -137,10 +170,6 @@
     <ProjectReference Include="..\HD.PWManage.Common\HD.PWManage.Common.csproj">
       <Project>{1A31657C-ECE2-4A0E-B5A6-4CBA6C47B896}</Project>
       <Name>HD.PWManage.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HD.PWManage.Encrypt\HD.PWManage.Encrypt.csproj">
-      <Project>{B147BFD4-2A23-45F0-BDFF-66A5972F41AC}</Project>
-      <Name>HD.PWManage.Encrypt</Name>
     </ProjectReference>
     <ProjectReference Include="..\HD.PWManage.Model\HD.PWManage.Model.csproj">
       <Project>{4C80D8DC-9209-4ABE-B3BA-2E4B6BF05D19}</Project>
@@ -152,6 +181,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lock.ico" />
     <None Include="Image\6400.png" />
     <Content Include="Image\add.png" />
     <Content Include="Image\del.png" />
@@ -191,7 +221,26 @@
     <Content Include="Image\sy3_05-1.jpg" />
     <Content Include="Image\sy3_05.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

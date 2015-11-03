@@ -1,0 +1,15 @@
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.DALFactory.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.DALFactory.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.IDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.OledbDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.Model.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.DBHelper.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\MySql.Data.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\System.Data.SQLite.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.IDAL.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.OledbDAL.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.Model.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\bin\Release\HD.PWManage.DBHelper.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\obj\Release\HD.PWManage.DALFactory.csprojResolveAssemblyReference.cache
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\obj\Release\HD.PWManage.DALFactory.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.DALFactory\obj\Release\HD.PWManage.DALFactory.pdb

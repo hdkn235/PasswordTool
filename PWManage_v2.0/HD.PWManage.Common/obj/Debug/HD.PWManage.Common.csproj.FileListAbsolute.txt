@@ -21,10 +21,9 @@ D:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\HD.PWManage.
 D:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\HD.PWManage.Common.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\bin\Debug\HD.PWManage.Common.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\bin\Debug\HD.PWManage.Common.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\bin\Debug\ChnCharInfo.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\bin\Debug\Interop.SpeechLib.dll
-E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\ResolveAssemblyReference.cache
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\Interop.SpeechLib.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\HD.PWManage.Common.csproj.ResolveComReference.cache
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\HD.PWManage.Common.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\obj\Debug\HD.PWManage.Common.pdb
-E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Common\bin\Debug\ChnCharInfo.dll

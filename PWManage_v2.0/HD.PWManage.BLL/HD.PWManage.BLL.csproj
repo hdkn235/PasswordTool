@@ -40,18 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EncryptBLL.cs" />
+    <Compile Include="ConfigBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AccountInfoBLL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HD.PWManage.Common\HD.PWManage.Common.csproj">
+      <Project>{1A31657C-ECE2-4A0E-B5A6-4CBA6C47B896}</Project>
+      <Name>HD.PWManage.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HD.PWManage.DALFactory\HD.PWManage.DALFactory.csproj">
       <Project>{18CBF58A-3566-49BA-8A77-CD5E94D23495}</Project>
       <Name>HD.PWManage.DALFactory</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HD.PWManage.Encrypt\HD.PWManage.Encrypt.csproj">
-      <Project>{B147BFD4-2A23-45F0-BDFF-66A5972F41AC}</Project>
-      <Name>HD.PWManage.Encrypt</Name>
     </ProjectReference>
     <ProjectReference Include="..\HD.PWManage.IDAL\HD.PWManage.IDAL.csproj">
       <Project>{9CE5EEC2-20BB-4040-AB95-5C42F1761F71}</Project>

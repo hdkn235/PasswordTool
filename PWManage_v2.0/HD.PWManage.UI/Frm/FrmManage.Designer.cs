@@ -43,15 +43,12 @@
             this.btnNew = new System.Windows.Forms.ToolStripButton();
             this.btnModify = new System.Windows.Forms.ToolStripButton();
             this.btnDelete = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtSearch = new HD.MyControls.QQTextBox();
-            this.qqButton1 = new HD.MyControls.QQButton();
             this.cbAll = new System.Windows.Forms.CheckBox();
             this.pagerControl1 = new HD.PWManage.UI.PagerControl();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvInfos
@@ -72,14 +69,14 @@
             this.email,
             this.remark});
             this.dgvInfos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvInfos.Location = new System.Drawing.Point(0, 72);
+            this.dgvInfos.Location = new System.Drawing.Point(0, 27);
             this.dgvInfos.MultiSelect = false;
             this.dgvInfos.Name = "dgvInfos";
             this.dgvInfos.ReadOnly = true;
             this.dgvInfos.RowHeadersVisible = false;
             this.dgvInfos.RowTemplate.Height = 23;
             this.dgvInfos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfos.Size = new System.Drawing.Size(740, 440);
+            this.dgvInfos.Size = new System.Drawing.Size(803, 485);
             this.dgvInfos.TabIndex = 0;
             this.dgvInfos.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvInfos_DataBindingComplete);
             this.dgvInfos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvInfos_MouseDoubleClick);
@@ -106,7 +103,7 @@
             // 
             this.title.DataPropertyName = "Title";
             this.title.Frozen = true;
-            this.title.HeaderText = "标题";
+            this.title.HeaderText = "关键词";
             this.title.Name = "title";
             this.title.ReadOnly = true;
             this.title.Width = 150;
@@ -157,13 +154,15 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNew,
             this.btnModify,
             this.btnDelete});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 47);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(740, 25);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStrip1.Size = new System.Drawing.Size(803, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -172,7 +171,7 @@
             this.btnNew.Image = global::HD.PWManage.UI.Properties.Resources.add;
             this.btnNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(52, 22);
+            this.btnNew.Size = new System.Drawing.Size(57, 24);
             this.btnNew.Text = "新建";
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
@@ -181,7 +180,7 @@
             this.btnModify.Image = global::HD.PWManage.UI.Properties.Resources.update;
             this.btnModify.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(52, 22);
+            this.btnModify.Size = new System.Drawing.Size(57, 24);
             this.btnModify.Text = "修改";
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
@@ -190,19 +189,9 @@
             this.btnDelete.Image = global::HD.PWManage.UI.Properties.Resources.del;
             this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(52, 22);
+            this.btnDelete.Size = new System.Drawing.Size(57, 24);
             this.btnDelete.Text = "删除";
             this.btnDelete.Click += new System.EventHandler(this.btnDel_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(740, 47);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // txtSearch
             // 
@@ -210,26 +199,16 @@
             this.txtSearch.EmptyTextTip = null;
             this.txtSearch.EmptyTextTipColor = System.Drawing.Color.DarkGray;
             this.txtSearch.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtSearch.Location = new System.Drawing.Point(198, 13);
+            this.txtSearch.Location = new System.Drawing.Point(423, 2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(263, 23);
+            this.txtSearch.Size = new System.Drawing.Size(374, 23);
             this.txtSearch.TabIndex = 28;
-            // 
-            // qqButton1
-            // 
-            this.qqButton1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.qqButton1.Location = new System.Drawing.Point(472, 13);
-            this.qqButton1.Name = "qqButton1";
-            this.qqButton1.Size = new System.Drawing.Size(70, 23);
-            this.qqButton1.TabIndex = 31;
-            this.qqButton1.Text = "搜索";
-            this.qqButton1.UseVisualStyleBackColor = true;
-            this.qqButton1.Click += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // cbAll
             // 
             this.cbAll.AutoSize = true;
-            this.cbAll.Location = new System.Drawing.Point(9, 76);
+            this.cbAll.Location = new System.Drawing.Point(9, 32);
             this.cbAll.Name = "cbAll";
             this.cbAll.Size = new System.Drawing.Size(15, 14);
             this.cbAll.TabIndex = 32;
@@ -247,7 +226,7 @@
             this.pagerControl1.PageIndex = 1;
             this.pagerControl1.PageSize = 15;
             this.pagerControl1.RecordCount = 1000;
-            this.pagerControl1.Size = new System.Drawing.Size(740, 35);
+            this.pagerControl1.Size = new System.Drawing.Size(803, 35);
             this.pagerControl1.TabIndex = 33;
             this.pagerControl1.OnPageChanged += new System.EventHandler(this.pagerControl_OnPageChanged);
             // 
@@ -255,16 +234,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 547);
+            this.ClientSize = new System.Drawing.Size(803, 547);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.cbAll);
             this.Controls.Add(this.dgvInfos);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.qqButton1);
-            this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pagerControl1);
             this.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmManage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "密码管理器";
@@ -274,7 +251,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,9 +264,9 @@
         private System.Windows.Forms.ToolStripButton btnNew;
         private System.Windows.Forms.ToolStripButton btnModify;
         private System.Windows.Forms.ToolStripButton btnDelete;
-        private MyControls.QQButton qqButton1;
         private MyControls.QQTextBox txtSearch;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox cbAll;
+        private PagerControl pagerControl1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn cb;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn title;
@@ -299,8 +275,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn web;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn remark;
-        private System.Windows.Forms.CheckBox cbAll;
-        private PagerControl pagerControl1;
     }
 }
 

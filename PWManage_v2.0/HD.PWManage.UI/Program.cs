@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace HD.PWManage.UI
 {
-    static class Program
+    public static class Program
     {
         /// <summary>
         /// 应用程序的主入口点。

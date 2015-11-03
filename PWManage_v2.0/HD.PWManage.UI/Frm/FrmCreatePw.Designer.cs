@@ -30,14 +30,15 @@
         {
             this.txtTitle = new HD.MyControls.QQTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtMainPw = new HD.MyControls.QQTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPw = new HD.MyControls.QQTextBox();
             this.btnSave = new HD.MyControls.QQButton();
             this.btnCancel = new HD.MyControls.QQButton();
             this.btnCreate = new HD.MyControls.QQGlassButton();
+            this.nupPWlength = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupPWlength)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -54,32 +55,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 32);
+            this.label1.Location = new System.Drawing.Point(26, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 1;
-            this.label1.Text = "标题";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "主密码";
-            // 
-            // txtMainPw
-            // 
-            this.txtMainPw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMainPw.EmptyTextTip = null;
-            this.txtMainPw.EmptyTextTipColor = System.Drawing.Color.DarkGray;
-            this.txtMainPw.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtMainPw.Location = new System.Drawing.Point(80, 76);
-            this.txtMainPw.Name = "txtMainPw";
-            this.txtMainPw.PasswordChar = '*';
-            this.txtMainPw.Size = new System.Drawing.Size(186, 23);
-            this.txtMainPw.TabIndex = 2;
+            this.label1.Text = "关键词";
             // 
             // label3
             // 
@@ -109,7 +89,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(69, 30);
             this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "保存";
+            this.btnSave.Text = "使用";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -138,19 +118,45 @@
             this.btnCreate.ToolTipText = null;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
+            // nupPWlength
+            // 
+            this.nupPWlength.Location = new System.Drawing.Point(80, 76);
+            this.nupPWlength.Minimum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.nupPWlength.Name = "nupPWlength";
+            this.nupPWlength.Size = new System.Drawing.Size(186, 21);
+            this.nupPWlength.TabIndex = 10;
+            this.nupPWlength.Value = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "密码长度";
+            // 
             // FrmCreatePw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(377, 222);
+            this.Controls.Add(this.nupPWlength);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPw);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtMainPw);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTitle);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -160,6 +166,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "密码生成";
             ((System.ComponentModel.ISupportInitialize)(this.btnCreate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupPWlength)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,12 +176,12 @@
 
         private MyControls.QQTextBox txtTitle;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private MyControls.QQTextBox txtMainPw;
         private System.Windows.Forms.Label label3;
         private MyControls.QQTextBox txtPw;
         private MyControls.QQButton btnSave;
         private MyControls.QQButton btnCancel;
         private MyControls.QQGlassButton btnCreate;
+        private System.Windows.Forms.NumericUpDown nupPWlength;
+        private System.Windows.Forms.Label label2;
     }
 }

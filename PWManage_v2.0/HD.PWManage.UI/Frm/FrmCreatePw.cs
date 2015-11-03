@@ -21,13 +21,12 @@ namespace HD.PWManage.UI
         private void btnCreate_Click(object sender, EventArgs e)
         {
             string title = txtTitle.Text;
-            string mainPw = txtMainPw.Text;
+            int pwLength = (int)nupPWlength.Value;
 
             title = PinYinHelper.GetPinYinStr(title);
-            mainPw = PinYinHelper.GetPinYinStr(mainPw);
 
-            string encryptStr = HashEncode.HashEncoding(title + mainPw);
-            txtPw.Text = encryptStr.Substring(0, 34) ;
+            string encryptStr = DESEncrypt.Encrypt(title);
+            txtPw.Text = encryptStr.Substring(0, pwLength);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
