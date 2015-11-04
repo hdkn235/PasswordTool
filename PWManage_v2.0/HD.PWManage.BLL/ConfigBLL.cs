@@ -131,27 +131,84 @@ namespace HD.PWManage.BLL
         #region  ExtensionMethod
 
         /// <summary>
-        /// 获取登录密码Model
+        /// 登录密码
         /// </summary>
         /// <returns></returns>
-        public Config GetLoginPWModel()
+        public string LoginPW
         {
-            Config model = null;
-            List<Config> list = GetModelList("CName='LoginPW'");
-            if (list.Count > 0)
+            get
             {
-                model = list[0];
+                if (string.IsNullOrEmpty(this["LoginPW"]))
+                {
+                    this["LoginPW"] = CommonHelper.GetMD5Str("123");
+                }
+
+                return this["LoginPW"];
             }
-            else
+            set
             {
-                model = new Config();
-                model.CName = "LoginPW";
-                model.CInfo = CommonHelper.GetMD5Str("123");
-                Add(model);
+                this["LoginPW"] = value;
             }
-            return model;
         }
 
+        /// <summary>
+        /// 是否开启语音登录
+        /// </summary>
+        /// <returns></returns>
+        public bool IsStartVoiceLogin
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(this["IsStartVoiceLogin"]))
+                {
+                    this["IsStartVoiceLogin"] = "False";
+                }
+
+                return Convert.ToBoolean(this["IsStartVoiceLogin"]);
+            }
+            set
+            {
+                this["IsStartVoiceLogin"] = value.ToString();
+            }
+        }
+
+        /// <summary>
+        /// 索引器
+        /// </summary>
+        /// <param name="indexName"></param>
+        /// <returns></returns>
+        private string this[string indexName]
+        {
+            get
+            {
+                Config model = null;
+                List<Config> list = GetModelList("CName='" + indexName + "'");
+                if (list.Count > 0)
+                {
+                    model = list[0];
+                }
+                return model == null ? string.Empty : model.CInfo;
+            }
+
+            set
+            {
+                Config model = null;
+                List<Config> list = GetModelList("CName='" + indexName + "'");
+                if (list.Count > 0)
+                {
+                    model = list[0];
+                    model.CInfo = value;
+                    Update(model);
+                }
+                else
+                {
+                    model = new Config();
+                    model.CName = indexName;
+                    model.CInfo = value;
+                    Add(model);
+                }
+            }
+        }
 
         #endregion  ExtensionMethod
     }

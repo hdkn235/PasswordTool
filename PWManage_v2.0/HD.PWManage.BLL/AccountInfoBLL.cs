@@ -11,7 +11,7 @@ namespace HD.PWManage.BLL
 {
     public class AccountInfoBLL
     {
-       private readonly IAccountInfoDAL dal = AbstractFactory.CreateAccountInfoDAL();
+        private readonly IAccountInfoDAL dal = AbstractFactory.CreateAccountInfoDAL();
 
         #region  BasicMethod
 
@@ -44,7 +44,6 @@ namespace HD.PWManage.BLL
         /// </summary>
         public bool Delete(int ID)
         {
-
             return dal.Delete(ID);
         }
         /// <summary>
@@ -122,7 +121,11 @@ namespace HD.PWManage.BLL
         public List<AccountInfo> GetListByPage(int startIndex, int pageSize)
         {
             List<AccountInfo> list = GetModelList("");
-            return list.OrderByDescending(a => a.RegistTime).Skip((startIndex - 1) * pageSize).Take(pageSize).ToList<AccountInfo>();
+            return list
+                .OrderByDescending(a => a.RegistTime)
+                .Skip((startIndex - 1) * pageSize)
+                .Take(pageSize)                
+                .ToList<AccountInfo>();
         }
         /// <summary>
         /// 分页获取数据列表

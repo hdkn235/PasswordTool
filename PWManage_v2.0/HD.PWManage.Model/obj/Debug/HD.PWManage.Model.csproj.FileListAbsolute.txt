@@ -10,5 +10,10 @@ E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.Model\obj\Debug\HD.PWManage.M
 E:\Projects\PasswordTool\PWManage_v1.0\HD.PWManage.Model\obj\Debug\HD.PWManage.Model.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\bin\Debug\HD.PWManage.Model.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\bin\Debug\HD.PWManage.Model.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\bin\Debug\HD.PWManage.Common.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\bin\Debug\Interop.SpeechLib.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\bin\Debug\ChnCharInfo.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\bin\Debug\HD.PWManage.Common.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\obj\Debug\HD.PWManage.Model.csprojResolveAssemblyReference.cache
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\obj\Debug\HD.PWManage.Model.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.Model\obj\Debug\HD.PWManage.Model.pdb

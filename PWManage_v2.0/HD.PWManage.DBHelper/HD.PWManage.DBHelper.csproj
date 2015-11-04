@@ -48,10 +48,15 @@
     <Compile Include="CommandInfo.cs" />
     <Compile Include="DbHelperOleDb.cs" />
     <Compile Include="DbHelperSQL.cs" />
-    <Compile Include="DESEncrypt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PubConstant.cs" />
     <Compile Include="SQLHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HD.PWManage.Common\HD.PWManage.Common.csproj">
+      <Project>{1A31657C-ECE2-4A0E-B5A6-4CBA6C47B896}</Project>
+      <Name>HD.PWManage.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

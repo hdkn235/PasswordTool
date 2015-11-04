@@ -83,6 +83,12 @@
     <Compile Include="Frm\FrmAccountInfo.Designer.cs">
       <DependentUpon>FrmAccountInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm\FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm\FrmCreatePw.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm\FrmAccountInfo.resx">
       <DependentUpon>FrmAccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm\FrmCreatePw.resx">
       <DependentUpon>FrmCreatePw.cs</DependentUpon>
@@ -182,6 +191,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lock.ico" />
+    <None Include="Resources\266.png" />
+    <None Include="Resources\6407.png" />
+    <None Include="Resources\6406.png" />
+    <None Include="Resources\个性保密图标下载5.ico" />
     <None Include="Image\6400.png" />
     <Content Include="Image\add.png" />
     <Content Include="Image\del.png" />
@@ -199,7 +212,6 @@
     <Content Include="Image\sy1_05-1.jpg" />
     <Content Include="Image\sy1_05.jpg" />
     <Content Include="Image\lock.ico" />
-    <Content Include="lib\HD.MyControls.dll" />
     <None Include="Image\sy1_08-2.jpg" />
     <None Include="Image\sy1_08-1.jpg" />
     <None Include="Image\sy1_07-2.jpg" />
@@ -221,9 +233,7 @@
     <Content Include="Image\sy3_05-1.jpg" />
     <Content Include="Image\sy3_05.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Common\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>

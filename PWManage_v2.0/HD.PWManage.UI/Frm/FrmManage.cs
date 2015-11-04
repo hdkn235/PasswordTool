@@ -112,14 +112,8 @@ namespace HD.PWManage.UI
                 AccountInfoBLL bll = new AccountInfoBLL();
                 AccountInfo accountInfo = new AccountInfo();
                 bll.DeleteList(string.Join(",", delList.ToArray()));
-            }
-            else
-            {
-                MessageBox.Show("请您选择要删除的账号信息！","提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            Search();
+                Search();
+            }            
         }
 
         /// <summary>
@@ -151,13 +145,21 @@ namespace HD.PWManage.UI
             Application.Exit();
         }
 
+        /// <summary>
+        /// 修改按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModify_Click(object sender, EventArgs e)
         {
-            object id = dgvInfos.SelectedRows[0].Cells["id"].Value;
-            if (id != null)
+            if (dgvInfos.SelectedRows.Count > 0)
             {
-                FrmAccountInfo frmAccountInfo = new FrmAccountInfo(id.ToString(), AfterEditFunc);
-                frmAccountInfo.ShowDialog();
+                object id = dgvInfos.SelectedRows[0].Cells["id"].Value;
+                if (id != null)
+                {
+                    FrmAccountInfo frmAccountInfo = new FrmAccountInfo(id.ToString(), AfterEditFunc);
+                    frmAccountInfo.ShowDialog();
+                }
             }
         }
 
@@ -196,77 +198,5 @@ namespace HD.PWManage.UI
                 frmAccountInfo.ShowDialog();
             }
         }
-
-
-        #region 修改密码代码
-
-        ///// <summary>
-        ///// 修改密码确认按钮事件
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void btnConfirm_Click(object sender, EventArgs e)
-        //{
-        //    this.errorProvider1.Clear();
-
-        //    if (CheckPwInfo())
-        //    {
-        //        CommonHelper.SetPw(txtNewPw.Text);
-        //        ClearPwInfo();
-        //        MessageBox.Show("修改密码成功！");
-        //    }
-
-        //}
-
-        //private void ClearPwInfo()
-        //{
-        //    txtNewPw.Text = "";
-        //    txtOldPw.Text = "";
-        //    txtConfirmPw.Text = "";
-        //}
-
-        //private void btnCancel_Click(object sender, EventArgs e)
-        //{
-        //    ClearPwInfo();
-        //}
-
-        //private bool CheckPwInfo()
-        //{
-        //    if (txtOldPw.Text == "")
-        //    {
-        //        this.errorProvider1.SetError(this.txtOldPw, "旧密码不能为空！");
-        //        txtOldPw.Focus();
-        //        return false;
-        //    }
-        //    if (txtNewPw.Text == "")
-        //    {
-        //        this.errorProvider1.SetError(this.txtNewPw, "新密码不能为空！");
-        //        txtNewPw.Focus();
-        //        return false;
-        //    }
-        //    if (txtConfirmPw.Text == "")
-        //    {
-        //        this.errorProvider1.SetError(this.txtConfirmPw, "确认新密码不能为空！");
-        //        txtConfirmPw.Focus();
-        //        return false;
-        //    }
-        //    if (!CommonHelper.CheckPw(txtOldPw.Text))
-        //    {
-        //        this.errorProvider1.SetError(this.txtOldPw, "旧密码输入错误，请重新输入！");
-        //        txtOldPw.Focus();
-        //        return false;
-        //    }
-
-        //    if (txtNewPw.Text != txtConfirmPw.Text)
-        //    {
-        //        this.errorProvider1.SetError(this.txtNewPw, "新密码与确认新密码不一致，请重新输入！");
-        //        txtNewPw.Focus();
-        //        return false;
-        //    }
-
-        //    return true;
-        //} 
-        #endregion
-
     }
 }

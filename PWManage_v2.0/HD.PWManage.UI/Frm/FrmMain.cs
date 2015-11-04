@@ -26,9 +26,15 @@ namespace HD.PWManage.UI
 
         private void ShowPwBox()
         {
+            HideForm();
             FrmManage fm = FrmManage.GetInstance();
-            fm.MdiParent = this;
-            fm.Dock = DockStyle.Fill;
+            if (!panel1.Controls.Contains(fm))
+            {
+                fm.TopLevel = false;
+                //fm.MdiParent = this;
+                fm.Dock = DockStyle.Fill;
+                panel1.Controls.Add(fm);
+            }
             fm.Show();
         }
 
@@ -50,6 +56,38 @@ namespace HD.PWManage.UI
         {
             FrmModifyPW frmSettings = new FrmModifyPW();
             frmSettings.ShowDialog();
+        }
+
+        private void toolbarConfig_Click(object sender, EventArgs e)
+        {
+            HideForm();
+            FrmConfig fm = FrmConfig.GetInstance();
+            if (!panel1.Controls.Contains(fm))
+            {
+                fm.TopLevel = false;
+                fm.Dock = DockStyle.Fill;
+                panel1.Controls.Add(fm);
+            }
+            fm.Show();
+        }
+
+        /// <summary>
+        /// 切换标签隐藏窗体
+        /// </summary>
+        private void HideForm()
+        {
+            foreach (Control control in panel1.Controls)
+            {
+                if (control is Form)
+                {
+                    control.Hide();
+                }
+            }
+        }
+
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

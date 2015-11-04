@@ -30,14 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvInfos = new System.Windows.Forms.DataGridView();
-            this.cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pw = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.web = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNew = new System.Windows.Forms.ToolStripButton();
@@ -46,6 +38,14 @@
             this.txtSearch = new HD.MyControls.QQTextBox();
             this.cbAll = new System.Windows.Forms.CheckBox();
             this.pagerControl1 = new HD.PWManage.UI.PagerControl();
+            this.cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pw = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.web = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -80,73 +80,6 @@
             this.dgvInfos.TabIndex = 0;
             this.dgvInfos.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvInfos_DataBindingComplete);
             this.dgvInfos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvInfos_MouseDoubleClick);
-            // 
-            // cb
-            // 
-            this.cb.FalseValue = "0";
-            this.cb.Frozen = true;
-            this.cb.HeaderText = "";
-            this.cb.Name = "cb";
-            this.cb.ReadOnly = true;
-            this.cb.TrueValue = "1";
-            this.cb.Width = 30;
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
-            // 
-            // title
-            // 
-            this.title.DataPropertyName = "Title";
-            this.title.Frozen = true;
-            this.title.HeaderText = "关键词";
-            this.title.Name = "title";
-            this.title.ReadOnly = true;
-            this.title.Width = 150;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "UserName";
-            this.name.HeaderText = "用户名";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            this.name.Width = 150;
-            // 
-            // pw
-            // 
-            this.pw.DataPropertyName = "UserPassWord";
-            this.pw.HeaderText = "密码";
-            this.pw.Name = "pw";
-            this.pw.ReadOnly = true;
-            this.pw.Width = 150;
-            // 
-            // web
-            // 
-            this.web.DataPropertyName = "WebUrl";
-            this.web.HeaderText = "网址";
-            this.web.Name = "web";
-            this.web.ReadOnly = true;
-            this.web.Width = 150;
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "Email";
-            this.email.HeaderText = "邮箱";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            this.email.Width = 150;
-            // 
-            // remark
-            // 
-            this.remark.DataPropertyName = "Remark";
-            this.remark.HeaderText = "备注";
-            this.remark.Name = "remark";
-            this.remark.ReadOnly = true;
-            this.remark.Width = 150;
             // 
             // errorProvider1
             // 
@@ -229,6 +162,73 @@
             this.pagerControl1.Size = new System.Drawing.Size(803, 35);
             this.pagerControl1.TabIndex = 33;
             this.pagerControl1.OnPageChanged += new System.EventHandler(this.pagerControl_OnPageChanged);
+            // 
+            // cb
+            // 
+            this.cb.FalseValue = "0";
+            this.cb.Frozen = true;
+            this.cb.HeaderText = "";
+            this.cb.Name = "cb";
+            this.cb.ReadOnly = true;
+            this.cb.TrueValue = "1";
+            this.cb.Width = 30;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // title
+            // 
+            this.title.DataPropertyName = "Title";
+            this.title.Frozen = true;
+            this.title.HeaderText = "关键词";
+            this.title.Name = "title";
+            this.title.ReadOnly = true;
+            this.title.Width = 150;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "UserName";
+            this.name.HeaderText = "用户名";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 150;
+            // 
+            // pw
+            // 
+            this.pw.DataPropertyName = "DisplayPW";
+            this.pw.HeaderText = "密码";
+            this.pw.Name = "pw";
+            this.pw.ReadOnly = true;
+            this.pw.Width = 150;
+            // 
+            // web
+            // 
+            this.web.DataPropertyName = "WebUrl";
+            this.web.HeaderText = "网址";
+            this.web.Name = "web";
+            this.web.ReadOnly = true;
+            this.web.Width = 150;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "Email";
+            this.email.HeaderText = "邮箱";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            this.email.Width = 150;
+            // 
+            // remark
+            // 
+            this.remark.DataPropertyName = "Remark";
+            this.remark.HeaderText = "备注";
+            this.remark.Name = "remark";
+            this.remark.ReadOnly = true;
+            this.remark.Width = 150;
             // 
             // FrmManage
             // 

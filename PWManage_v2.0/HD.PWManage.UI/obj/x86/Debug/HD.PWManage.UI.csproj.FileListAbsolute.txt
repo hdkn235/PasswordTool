@@ -103,8 +103,9 @@ E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.FrmLogin.resources
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.FrmMain.resources
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.FrmManage.resources
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.Frm.FrmModifyPW.resources
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.Properties.Resources.resources
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.csproj.GenerateResource.Cache
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\密码箱V2.exe
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\密码箱V2.pdb
-E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.Frm.FrmModifyPW.resources
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.UI\obj\x86\Debug\HD.PWManage.UI.Frm.FrmConfig.resources

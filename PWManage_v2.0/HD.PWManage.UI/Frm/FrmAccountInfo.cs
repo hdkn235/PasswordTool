@@ -46,7 +46,7 @@ namespace HD.PWManage.UI
                 {
                     txtTitle.Text = model.Title;
                     txtUserName.Text = model.UserName;
-                    txtUserPassWord.Text = model.UserPassWord;
+                    txtUserPassWord.Text = model.DisplayPW;
                     txtWebUrl.Text = model.WebUrl;
                     txtEmail.Text = model.Email;
                     txtRemark.Text = model.Remark;
@@ -68,7 +68,7 @@ namespace HD.PWManage.UI
                 {
                     accountInfo.UserName = txtUserName.Text;
                     accountInfo.Title = txtTitle.Text;
-                    accountInfo.UserPassWord = txtUserPassWord.Text;
+                    accountInfo.DisplayPW = txtUserPassWord.Text;
                     accountInfo.WebUrl = txtWebUrl.Text;
                     accountInfo.Email = txtEmail.Text;
                     accountInfo.Remark = txtRemark.Text;

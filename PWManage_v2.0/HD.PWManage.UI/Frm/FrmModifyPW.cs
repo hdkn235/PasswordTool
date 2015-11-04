@@ -25,11 +25,11 @@ namespace HD.PWManage.UI.Frm
             {
                 string oldPw = MD5Encrypt.GetStrMD5(MD5Encrypt.GetStrMD5(txtOldPw.Text));
                 ConfigBLL bll = new ConfigBLL();
-                Config loginPwModel = bll.GetLoginPWModel();
-                if (loginPwModel.CInfo.Equals(oldPw))
+                string loginPw = bll.LoginPW;
+                if (loginPw.Equals(oldPw))
                 {
-                    loginPwModel.CInfo = MD5Encrypt.GetStrMD5(MD5Encrypt.GetStrMD5(txtNewPw.Text));
-                    bll.Update(loginPwModel);
+                    loginPw = MD5Encrypt.GetStrMD5(MD5Encrypt.GetStrMD5(txtNewPw.Text));
+                    bll.LoginPW = loginPw;
                     MessageBox.Show("修改密码成功！");
                     this.Close();
                 }

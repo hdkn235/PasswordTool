@@ -45,11 +45,15 @@ D:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\obj\Debug\HD.PWManage.BLL
 D:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\obj\Debug\HD.PWManage.BLL.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.BLL.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.BLL.pdb
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Common.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.DALFactory.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.IDAL.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Model.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.OledbDAL.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\Interop.SpeechLib.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\ChnCharInfo.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.DBHelper.dll
+E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Common.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.DALFactory.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.IDAL.pdb
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Model.pdb
@@ -58,7 +62,3 @@ E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.DBH
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\obj\Debug\HD.PWManage.BLL.csprojResolveAssemblyReference.cache
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\obj\Debug\HD.PWManage.BLL.dll
 E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\obj\Debug\HD.PWManage.BLL.pdb
-E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Common.dll
-E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\Interop.SpeechLib.dll
-E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\ChnCharInfo.dll
-E:\Projects\PasswordTool\PWManage_v2.0\HD.PWManage.BLL\bin\Debug\HD.PWManage.Common.pdb

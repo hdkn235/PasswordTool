@@ -54,6 +54,7 @@ namespace HD.PWManage.Model
             set { _cinfo = value; }
             get { return _cinfo; }
         }
+
         #endregion Model
 
     }

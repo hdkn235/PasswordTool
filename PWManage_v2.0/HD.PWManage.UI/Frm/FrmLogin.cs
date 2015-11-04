@@ -22,7 +22,11 @@ namespace HD.PWManage.UI
         {
             InitializeComponent();
 
-            //OpenVoice();
+            ConfigBLL bll = new ConfigBLL();
+            if (bll.IsStartVoiceLogin)
+            {
+                OpenVoice();
+            }
         }
 
         /// <summary>
@@ -45,7 +49,11 @@ namespace HD.PWManage.UI
         {
             if (CheckPw(txtPw.Text))
             {
-                //sh.CloseRec();
+                ConfigBLL bll = new ConfigBLL();
+                if (sh!= null)
+                {
+                    sh.CloseRec();
+                }                    
                 this.Hide();
                 FrmMain fm = new FrmMain();
                 fm.Show();
@@ -65,8 +73,8 @@ namespace HD.PWManage.UI
         {
             string loginPw = CommonHelper.GetMD5Str(pw);
             ConfigBLL bll = new ConfigBLL();
-            Config model = bll.GetLoginPWModel();
-            if (model.CInfo.Equals(loginPw))
+            string realPw = bll.LoginPW;
+            if (realPw.Equals(loginPw))
             {
                 return true;
             }

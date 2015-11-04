@@ -22,7 +22,7 @@ namespace HD.PWManage.Common
         /// <returns></returns>
 		public static string Encrypt(string Text) 
 		{
-			return Encrypt(Text,"MATICSOFT");
+            return Encrypt(Text, "rainbirda");
 		}
 		/// <summary> 
 		/// 加密数据 
@@ -63,7 +63,7 @@ namespace HD.PWManage.Common
         /// <returns></returns>
 		public static string Decrypt(string Text) 
 		{
-			return Decrypt(Text,"MATICSOFT");
+            return Decrypt(Text, "rainbirda");
 		}
 		/// <summary> 
 		/// 解密数据 
