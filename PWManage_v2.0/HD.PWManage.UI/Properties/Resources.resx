@@ -118,17 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="sy2_04_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy2_04-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sy1_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\sy1_05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy2_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy2_03.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy2_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy2_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\lock.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,14 +130,8 @@
   <data name="sy1_03_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\sy1_03-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sy3_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy3_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="png_0090" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\png-0090.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy3_04_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy3_04-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="del" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\del.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,17 +151,8 @@
   <data name="png_0060" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\png-0060.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sy2_05_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy2_05-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy3_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy3_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy2_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy2_05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sy1_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\sy1_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,35 +160,8 @@
   <data name="_6400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\6400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sy3_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy3_03.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy3_03_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy3_03-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy3_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy3_05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy2_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy2_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy1_05_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy1_05-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy3_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy3_04.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy2_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy2_04.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy3_05_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy3_05-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sy1_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\sy1_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sy2_03_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\sy2_03-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="266" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\266.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -131,34 +131,7 @@ namespace HD.PWManage.UI
                         var_bar = 1;
                         break;
                     }
-                case 2:
-                    {
-                        this.Width = Properties.Resources.sy2_01.Width;
-                        this.Height = Properties.Resources.sy2_01.Height + Properties.Resources.sy2_02.Height - 5;
-                        panel_Title.BackgroundImage = Properties.Resources.sy2_01;
-                        panel_ALL.BackgroundImage = Properties.Resources.sy2_02;
-                        pictureBox_Min.Image = null;
-                        pictureBox_Min.Image = Properties.Resources.sy2_04;
-                        pictureBox_Close.Image = null;
-                        pictureBox_Close.Image = Properties.Resources.sy2_03;
-                        var_bar = 2;
-                        break;
-                    }
-                case 3:
-                    {
-                        this.Width = Properties.Resources.sy3_01.Width;
-                        this.Height = Properties.Resources.sy3_01.Height + Properties.Resources.sy3_02.Height - 5;
-                        panel_Title.BackgroundImage = Properties.Resources.sy3_01;
-                        panel_ALL.BackgroundImage = Properties.Resources.sy3_02;
-                        pictureBox_Min.Image = null;
-                        pictureBox_Min.Image = Properties.Resources.sy3_04;
-                        pictureBox_Close.Image = null;
-                        pictureBox_Close.Image = Properties.Resources.sy3_03;
-                        var_bar = 3;
-                        break;
-                    }
             }
-            //barterShow(n);
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -198,8 +171,6 @@ namespace HD.PWManage.UI
                             switch (var_bar)
                             {
                                 case 1: Tem_PictB.Image = Properties.Resources.sy1_04_1; break;
-                                case 2: Tem_PictB.Image = Properties.Resources.sy2_04_1; break;
-                                case 3: Tem_PictB.Image = Properties.Resources.sy3_04_1; break;
                             }
                         }
                         if (ns == 1)
@@ -207,31 +178,6 @@ namespace HD.PWManage.UI
                             switch (var_bar)
                             {
                                 case 1: Tem_PictB.Image = Properties.Resources.sy1_04; break;
-                                case 2: Tem_PictB.Image = Properties.Resources.sy2_04; break;
-                                case 3: Tem_PictB.Image = Properties.Resources.sy3_04; break;
-                            }
-                        }
-                        break;
-                    }
-                case 1:
-                    {
-                        Tem_PictB.Image = null;
-                        if (ns == 0)
-                        {
-                            switch (var_bar)
-                            {
-                                case 1: Tem_PictB.Image = Properties.Resources.sy1_05_1; break;
-                                case 2: Tem_PictB.Image = Properties.Resources.sy2_05_1; break;
-                                case 3: Tem_PictB.Image = Properties.Resources.sy3_05_1; break;
-                            }
-                        }
-                        if (ns == 1)
-                        {
-                            switch (var_bar)
-                            {
-                                case 1: Tem_PictB.Image = Properties.Resources.sy1_05; break;
-                                case 2: Tem_PictB.Image = Properties.Resources.sy2_05; break;
-                                case 3: Tem_PictB.Image = Properties.Resources.sy3_05; break;
                             }
                         }
                         break;
@@ -244,8 +190,6 @@ namespace HD.PWManage.UI
                             switch (var_bar)
                             {
                                 case 1: Tem_PictB.Image = Properties.Resources.sy1_03_1; break;
-                                case 2: Tem_PictB.Image = Properties.Resources.sy2_03_1; break;
-                                case 3: Tem_PictB.Image = Properties.Resources.sy3_03_1; break;
                             }
                         }
                         if (ns == 1)
@@ -253,8 +197,6 @@ namespace HD.PWManage.UI
                             switch (var_bar)
                             {
                                 case 1: Tem_PictB.Image = Properties.Resources.sy1_03; break;
-                                case 2: Tem_PictB.Image = Properties.Resources.sy2_03; break;
-                                case 3: Tem_PictB.Image = Properties.Resources.sy3_03; break;
                             }
                         }
                         break;
